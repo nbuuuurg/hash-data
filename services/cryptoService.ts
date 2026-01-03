@@ -29,7 +29,7 @@ export const cryptoService = {
   },
 
   hash: async (input: string | File, algorithm: string, encoding: Encoding): Promise<CryptoResult> => {
-    let data: ArrayBuffer;
+    let data: BufferSource; // Correction: Utilisation de BufferSource au lieu de ArrayBuffer
     
     if (typeof input === 'string') {
       data = new TextEncoder().encode(input);
