@@ -15,7 +15,7 @@ Un outil pédagogique et utilitaire moderne pour tester, comparer et comprendre 
 
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/nbuuuurg/hashmesdonnees.git
+git clone https://github.com/nbuuuurg/hash-data
 cd hash-mes-donnees
 ```
 
