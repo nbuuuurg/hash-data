@@ -24,25 +24,26 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen, onCl
       transition-transform duration-300 ease-in-out
       ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
     `}>
-      <div className="py-8 px-6 flex items-center justify-between border-b border-white/5">
-        <div className="flex items-center">
+      {/* Container Logo - Centré horizontalement et verticalement */}
+      <div className="relative py-10 flex items-center justify-center border-b border-white/5">
+        <div className="flex items-center justify-center">
           <img 
             src="/logo_hashmesdonnees-sansfond.png" 
             alt="HashMesDonnées" 
             className="h-16 w-auto object-contain"
             onError={(e) => {
-               // Fallback si l'image locale n'est pas trouvée
                e.currentTarget.style.display = 'none';
                const fallbackText = document.createElement('div');
-               fallbackText.className = 'text-white font-bold text-lg tracking-tight';
+               fallbackText.className = 'text-white font-bold text-lg tracking-tight text-center';
                fallbackText.innerText = 'HashMesDonnées';
                e.currentTarget.parentElement?.appendChild(fallbackText);
             }}
           />
         </div>
+        {/* Bouton fermeture mobile en position absolue pour ne pas décaler le centre */}
         <button 
           onClick={onClose}
-          className="lg:hidden p-2 text-slate-400 hover:text-white transition-colors"
+          className="lg:hidden absolute right-4 top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-white transition-colors"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -100,8 +101,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen, onCl
       </nav>
 
       <div className="p-4 bg-slate-800/50 m-4 rounded-xl border border-white/5">
-        <div className="text-[10px] uppercase font-bold text-slate-500 mb-2 tracking-wider">Engine Status</div>
-        <div className="flex items-center gap-2 text-xs font-medium">
+        <div className="text-[10px] uppercase font-bold text-slate-500 mb-2 tracking-wider text-center">Engine Status</div>
+        <div className="flex items-center justify-center gap-2 text-xs font-medium">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
           Local JS Engine
         </div>

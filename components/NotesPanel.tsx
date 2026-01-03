@@ -186,7 +186,8 @@ const NotesPanel: React.FC = () => {
         </div>
         
         <div className="p-8 space-y-4 bg-slate-50/30">
-          {Object.entries(hashes).map(([algo, value]) => (
+          {/* Fix: Explicitly cast Object.entries result to string array to avoid 'unknown' type error */}
+          {(Object.entries(hashes) as [string, string][]).map(([algo, value]) => (
             <div key={algo} className="group relative">
               <div className="flex flex-col md:flex-row gap-4 md:items-center p-4 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-indigo-200 transition-colors">
                 <div className="w-full md:w-40 flex-shrink-0">
