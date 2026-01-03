@@ -24,12 +24,12 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen, onCl
       transition-transform duration-300 ease-in-out
       ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
     `}>
-      <div className="p-6 flex items-center justify-between border-b border-white/5">
+      <div className="py-8 px-6 flex items-center justify-between border-b border-white/5">
         <div className="flex items-center">
           <img 
             src="/logo_hashmesdonnees-sansfond.png" 
             alt="HashMesDonnées" 
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
             onError={(e) => {
                // Fallback si l'image locale n'est pas trouvée
                e.currentTarget.style.display = 'none';
