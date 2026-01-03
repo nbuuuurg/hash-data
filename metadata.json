@@ -1,0 +1,5 @@
+{
+  "name": "HashMesDonnées",
+  "description": "Un outil pédagogique pour tester et comparer des fonctions cryptographiques telles que le Hachage, l'HMAC et la génération aléatoire.",
+  "requestFramePermissions": []
+}
