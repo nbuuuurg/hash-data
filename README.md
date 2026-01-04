@@ -1,17 +1,17 @@
 
-# 🔒 HashMesDonnées
+# HashMesDonnées
 
-Un outil pédagogique et utilitaire moderne pour tester, comparer et comprendre les fonctions cryptographiques.
+Un outil pour hasher des données; générer des tokens et des signatures API (HMAC). C'est un outil pédagogique et utilitaire modeste pour tester, comparer et comprendre les fonctions cryptographiques.
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Génération Aléatoire** : Création de tokens sécurisés (Hex/Base64).
 - **Hachage (Hashing)** : SHA-256, SHA-512, SHA-384 et SHA-1.
 - **HMAC (Signature)** : Authentification de messages avec clé secrète.
 - **Calculs Locaux** : Utilisation de la Web Crypto API (aucune donnée ne quitte le navigateur).
-- **Pédagogie** : Documentation intégrée sur les concepts cryptographiques.
+- **Pédagogie** : Documentation intégrée sur les concepts de base de la cryptographie.
 
-## 🚀 Installation Locale
+## Installation Locale
 
 1. Clonez le dépôt :
 ```bash
@@ -29,14 +29,7 @@ npm install
 npm run dev
 ```
 
-## 🌍 Déploiement
-
-Le projet est configuré pour être déployé instantanément sur **Netlify**.
-- Connectez votre repo GitHub à Netlify.
-- La commande de build est `npm run build`.
-- Le dossier de publication est `dist`.
-
-## 🛠️ Technologies
+## Technologies
 
 - **React 19**
 - **Vite** (Build tool)
@@ -44,6 +37,8 @@ Le projet est configuré pour être déployé instantanément sur **Netlify**.
 - **TypeScript**
 - **Web Crypto API** (Moteur de calcul)
 
-## 📄 Licence
+## Réalisation
 
-Projet sous licence MIT. Réalisé par @nbuuuurg.
+Ce projet a été conçu comme une **mini-app expérimentale**, montrant qu’il est possible de prototyper rapidement des outils utiles ou pédagogiques **sans forcément les déployer**. Des plateformes comme **Google AI Studio**, **Base44** ou encore **Lovable** permettent d’itérer, tester des idées et apprendre en construisant, même pour de petits projets locaux ou exploratoires.
+
+Réalisé avec Google AI Studio par @nbuuuurg.
