@@ -29,7 +29,7 @@ const LegalPanel: React.FC = () => {
               Hébergement
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Le Site est hébergé par des infrastructures cloud sécurisées garantissant la disponibilité de l'outil. Aucune donnée saisie par l'utilisateur n'est stockée sur ces serveurs.
+              Le site est hébergé par Netlify, Inc., société de droit américain, dont le siège social est situé au 2325 3rd Street, Suite 215, San Francisco, CA 94107, États-Unis. Netlify fournit des infrastructures cloud sécurisées garantissant la disponibilité du service. Aucune donnée saisie par l’utilisateur n’est stockée sur les serveurs de l’hébergeur.
             </p>
           </section>
 
@@ -40,6 +40,12 @@ const LegalPanel: React.FC = () => {
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
               L'architecture, les textes, les graphismes et le logo sont la propriété de <strong>HashMesDonnées</strong>. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sans autorisation préalable.
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Le code source du site est accessible publiquement sur GitHub à l’adresse suivante : 
+              <a href="https://github.com/nbuuuurg/hash-data/tree/main/public" target="_blank" rel="noopener noreferrer" className="underline">https://github.com/nbuuuurg/hash-data/</a>.
+              Le site a été conçu et développé à l’aide de Google AI Studio.
+              Toute personne est libre d’utiliser, modifier et redistribuer le code conformément aux termes de la licence.
             </p>
           </section>
 
