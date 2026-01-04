@@ -1,7 +1,7 @@
 
 # HashMesDonnées
 
-Un outil pour hasher des données; générer des tokens et des signatures API (HMAC). C'est un outil pédagogique et utilitaire modeste pour tester, comparer et comprendre les fonctions cryptographiques.
+Un outil pour hasher des données, générer des tokens et des signatures API (HMAC). C'est un outil pédagogique et utilitaire modeste pour tester, comparer et comprendre les fonctions cryptographiques.
 
 ## Fonctionnalités
 
