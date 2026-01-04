@@ -28,7 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen, onCl
       <div className="relative py-10 flex items-center justify-center border-b border-white/5">
         <div className="flex items-center justify-center">
           <img 
-            src="/logo_hashmesdonnees-sansfond.png" 
+            src="/une-illustration-de-perroquet-de-dessin-anime-3d-amusante.jpg" 
             alt="HashMesDonnées" 
             className="h-16 w-auto object-contain"
             onError={(e) => {
