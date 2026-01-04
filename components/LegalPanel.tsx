@@ -19,7 +19,7 @@ const LegalPanel: React.FC = () => {
               Édition du site
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Le présent site, accessible à l'URL <strong>hashmesdonnees.app</strong>, est édité par <strong>NovApps Services</strong>, agissant en tant qu'outil pédagogique et technique gratuit.
+              Le présent site est édité par <strong>NovApps</strong>, agissant en tant qu'outil pédagogique et technique gratuit.
             </p>
           </section>
 
